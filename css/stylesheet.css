@@ -19,22 +19,20 @@ header {
   background-color: #0C325A;
   width: 100%;
   height: 500px;
+  background-image: url(../img/oldman.png);
+  background-position: 110% 110%;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
-nav::after {
+.header-top::after {
   content: '';
   display: table;
   clear: both;
 }
-.header-list {
+nav {
   float: left;
 }
-.col-left {
-  width: 60%;
-}
-.col-right {
-  width: 40%;
-  line-height: 70px;
-}
+
 .header-list li {
   list-style: none;
   display: inline-block;
@@ -52,4 +50,8 @@ nav::after {
 }
 .header-list li a:hover {
   text-decoration: underline;
+}
+
+.header-bottom {
+
 }
