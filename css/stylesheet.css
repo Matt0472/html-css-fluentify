@@ -20,6 +20,21 @@ header {
   width: 100%;
   height: 500px;
 }
+nav::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.header-list {
+  float: left;
+}
+.col-left {
+  width: 60%;
+}
+.col-right {
+  width: 40%;
+  line-height: 70px;
+}
 .header-list li {
   list-style: none;
   display: inline-block;
