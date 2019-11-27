@@ -9,58 +9,87 @@ body {
   font-family: 'Roboto', sans-serif;
 
 }
+header {
+  /* height: 600px; */
+  width: 100%;
+  background-color: rgb(12, 50, 90);
+  background-image: url(../img/oldman.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 110% 110%;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
 }
-
-/* header */
-header {
-  background-color: #0C325A;
-  width: 100%;
-  height: 500px;
-  background-image: url(../img/oldman.png);
-  background-position: 110% 110%;
-  background-repeat: no-repeat;
-  background-size: 60%;
+.logo-container {
+  float: left;
+  height: 100%;
+  margin-right: 50px;
 }
-.header-top::after {
+
+.container ul {
+  display: inline;
+  list-style: none;
+}
+.container ul li {
+  display: inline-block;
+}
+.container ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-right: 40px;
+}
+.container::after {
   content: '';
   display: table;
   clear: both;
 }
-nav {
+.float-left {
+  width: 58%;
   float: left;
 }
-
-.header-list li {
-  list-style: none;
-  display: inline-block;
+.float-left::after {
+  content: '';
+  display: table;
+  clear: both;
 }
+.float-right {
+  width: 42%;
+  float: right;
+}
+.float-right ul {
+  float: right;
+}
+ #login-button {
+   border: 1px solid rgb(255, 255, 255);
+   border-radius: 4px;
+   padding: 7px 30px;
+ }
 
-.header-list li a {
-  text-decoration: none;
+.button {
+  border: 1px solid rgb(124, 187, 2);
+  border-radius: 4px;
+  padding: 7px 25px;
+  background-color: rgb(124, 187, 2);
+}
+.jumbotron {
+  width: 38%;
+  padding: 190px 0;
+}
+.jumbotron h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
   color: white;
-  font-size: 12px;
-  margin: 0 15px;
+}
+.jumbotron-button {
+  color: white;
+  text-decoration: none;
   text-transform: uppercase;
-  cursor: pointer;
-}
-.header-list li.nav-logo {
-  margin-right: 20px;
-}
-.header-list li a:hover {
-  text-decoration: underline;
-}
-.header-list.col-right li {
-  display: inline-block;
-}
-.header-list.col-right li:nth-child(2n) a,
-.header-list.col-right li:nth-child(3n) a {
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 10px;
-}
-.header-bottom {
-
+  padding: 15px 30px;
 }
